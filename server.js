@@ -29,9 +29,7 @@ mongoose.connection.on('error', (err) => {
     console.log(err.message);
 })
 
-mongoose.connection.on('connected', () => {
-    console.log('Mongodb connected to db!');
-})
+
 
 mongoose.connection.on('disconnected', () => {
     console.log('Mongodb connected is disconnected!');
